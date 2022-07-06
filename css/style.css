@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&family=Kalam:wght@700&family=Laila&display=swap');
+	/*font-family: 'Josefin Slab', serif;
+	font-family: 'Kalam', cursive;
+	font-family: 'Laila', sans-serif;*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f7;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    height: 3000px;
+    max-width: 3456px;
+    font-size: 10px;
+}
+
+/*---------------srollbar-----------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5em !important;
+    scroll-behavior: smooth !important;
+}
+    /* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+    /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2c2c2c;
+} 
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 45px;
+	max-height: 120px;
+	background-color: #2C2C2C;
+	opacity: .9;
+	color: #fff;
+}
+
+.header__wrapper_content {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-flex {
+	width: 20%;
+	display: flex;
+	justify-content: start;
+	align-self: center;
+}
+
+.logo {
+	color: #fff;
+	font-size: 2em;
+	font-family: 'Kalam', cursive;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.1em;
+	font-weight: normal;
+	font-family: 'Laila', serif;
+	letter-spacing: 0px;
+	color: #fff;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: end;
+}
+
+.menu hr {
+	display: none;
+}
+
+.menu li {
+	margin-right: 10%;
+	right: 0;
+}
+.menu li:last-child {
+	margin-right: 0%;
+}
+
+.menu a {
+	color: #fff;
+}
+
+.menu a:hover {
+	color: #ff0000;
+	transition: .2s;
+}
+/*!!!!! Mobile menu !!!!!*/
+.hamburger {
+	display: none;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 2px;
+	margin: 5px auto;
+	transition: 0.3s;
+	background-color: #fff;
+}
+
+.search-input {
+	display: none;
+}
+.mobile__profile-button {
+	display: none;
+	font-size: 1.5em;
+}
+.mobile__profile-button a {
+	color: #fff;
+}
+/*--------search form---------*/
+.search-from__wrapper {
+	display: flex;
+	border-radius: 10px;
+	border: none;
+	background-color: inherit;
+}
+.search-btn-mobile {
+	color: #fff;
+	font-size: 1em;
+	background: inherit;
+	border: none;
+}
+.menu input {
+	padding-left: 1%;
+	border: none;
+	height: 100%;
+	width: 100%;
+	outline: none;
+}
+.menu form {
+	display: flex;
+	justify-content: center;
+}
+.menu input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	height: 1em;
+	width: 1em;
+	border-radius: 50em;
+	background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+	background-size: contain;
+	opacity: 0;
+	pointer-events: none;
+}
+input[type="search"]:focus::-webkit-search-cancel-button {
+	opacity: .4;
+	pointer-events: all;
+}
+/*-----------------------Banner after header---------------------*/
+
+.Banner__with-something-new {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 3456px;
+	height: 100vh;
+	background-image: url(../img/banner-second-home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.Banner__text-wrap {
+	width: 70%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-self: center;
+	font-family: 'Laila', sans-serif;
+	color: #eaeaea;
+}
+
+.title__main-in-Banner {
+	font-size: 3.6em;
+}
+
+.subtitle__in-Banner {
+	font-size: 2em;
+}
+
+.Button__learn-more {
+	width: 120px;
+	background-color: #eaeaea;
+	color: #000;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	margin-top: 15px;
+	border-radius: 20px;
+}
+.Button__learn-more:hover {
+	background-color: #fff;
+	transition: .4s;
+}
