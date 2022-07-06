@@ -84,9 +84,9 @@
 	.nav__menu {
 		position: fixed;
 		flex-direction: column;
-		background: #000;
+		background: #fff;
 		width: 100%;
-		height: 110vh;
+		height: 100vh;
 		text-align: center;
 		transition: 0.3s;
 		top: -130%;
