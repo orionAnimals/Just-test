@@ -22,11 +22,20 @@
 	.subtitle__in-Banner {
 		font-size: 1.3em;
 	}
+	/*mobile cards*/
+	.card {
+	}
 }
 /*for tablet*/
 @media only screen and (max-width:768px){
 	header {
 		height: 8vh;
+	}
+	.alert_dont_buy_it {
+		margin-top: 8vh;
+	}
+	.alert_dont_buy_it span {
+		font-size: 0.8em;
 	}
 	.header__wrapper_content {
 		flex-direction: row-reverse;
@@ -56,7 +65,7 @@
 		display: none;
 	}
 	/*---form search---*/
-	.search-from__wrapper {
+	.search-form__wrapper {
 		border-radius: 10px;
 		border: white solid 3px;
 		background-color: #fff;
@@ -65,8 +74,13 @@
 		padding: 0px 10px;
 	}
 	.search-btn-mobile {
+		display: block;
 		background: #fff;
 		color: #000;
+	}
+	/*---form search pc---*/
+	.search__open-pc {
+		display: none;
 	}
 	.hamburger {
 		display: block;
@@ -84,12 +98,12 @@
 	.nav__menu {
 		position: fixed;
 		flex-direction: column;
-		background: #000;
+		background: #2B2B2B;
 		width: 100%;
 		height: 110vh;
 		text-align: center;
 		transition: 0.3s;
-		top: -150%;
+		top: -120%;
 		left: 0%;
 	}
 	.nav__menu.active {
@@ -107,17 +121,10 @@
 		display: flex;
 		z-index: 1;
 	}
-	/*-----mobile banner-----*/
+	/*-----mobile cards-----*/
 }
 @media only screen and (max-width:590px){
-	/*-----mobile banner-----*/
-	.Banner__with-something-new {
-		background-image: url(../img/banner-second-home-mobile.png);
-		background-size: cover;
-	}
-	.Banner__text-wrap {
-		color: #fff;
-	}
+	
 }
 /*for phone x*/
 @media only screen and (max-width:515px){
@@ -162,6 +169,9 @@
 	.header__wrapper_content {
 		width: 80%;
 	}
+	.alert_dont_buy_it {
+		padding: 0px 10%;
+	}
 	/*-----mobile banner-----*/
 	.Banner__text-wrap {
 		width: 80%;
@@ -187,6 +197,12 @@
 	}
 	header {
 		height: 60px;
+	}
+	.alert_dont_buy_it {
+		margin-top: 60px;
+	}
+	.alert_dont_buy_it span {
+		font-size: 17px;
 	}
 	/*-----mobile banner-----*/
 	.title__main-in-Banner {
