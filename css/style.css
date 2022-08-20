@@ -43,7 +43,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	height: 1em;
 	width: 1em;
 	border-radius: 50em;
-	background: url(/img/times-circle.svg) no-repeat 50% 50%;
+	background: url(img/times-circle.svg) no-repeat 50% 50%;
 	background-size: contain;
 	opacity: 0.5;
 	pointer-events: none;
@@ -260,7 +260,7 @@ header {
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	background: url(../img/banner-main-home.jpg) no-repeat center center;
+	background: url(img/banner-main-home.jpg) no-repeat center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
