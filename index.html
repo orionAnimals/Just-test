@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop.com | home page</title>
+    <title>Shop.com | Home page</title>
     <!-- favicon -->
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- media queries -->
     <link rel="stylesheet" href="css/media-queries.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <!--icons fontavesome.com-->
     <script src="https://kit.fontawesome.com/3b90393ff9.js" crossorigin="anonymous"></script>
     <!--google font family-->
@@ -17,31 +19,55 @@
 </head>
 <body>
     <header>
+        <!-- search pc -->
+        <div class="search__pc-block">
+            <form>
+                <div class="search-form__wrapper-pc">
+                    <span class="search-btn-pc">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <input id="Search" type="text" placeholder="Search on HalfTheWorld.com" autocomplete="off">
+                    
+                    <span id="btn_close" class="btn__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>                
+                </div>
+            </form>
+        </div>
+        <!-- header wrap -->
         <div class="header__wrapper_content">
+            <!-- profile btn mb -->
             <div class="mobile__profile-button">
                 <a href="#" class=""><i class="fa-solid fa-user"></i></a>
             </div>
-
+            <!-- logo -->
             <div class="logo-flex"><a href="/" class="logo">Half the world</a></div>
+            <!-- menu -->
             <nav class="menu">
                 <ul class="nav__menu">
                     <li>
                         <form action="#">
-                            <div class="search-from__wrapper">
+                            <div class="search-form__wrapper">
                                 <button class="search-btn-mobile">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </button>
 
-                                <input id="Search" type="search" placeholder="Search" class="search-input">
+                                <input id="Search" type="search" placeholder="Search" class="search-input" autocomplete="off">
                             </div>
                         </form>
+                    </li>
+                    <li>
+                        <button type="submit" id="Search__open-pc" class="search__open-pc">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </li>
                     <li>
                         <a href="#" class="menu__link">Products</a>
                         <hr/>
                     </li>
                     <li>
-                        <a href="#" class="menu__link">Nothing</a>
+                        <a href="#" class="menu__link">About</a>
                         <hr/>
                     </li>
                     <li>
@@ -61,26 +87,202 @@
             </nav>
         </div>
     </header>
-
-    <!-- Slider after header -->
-    <div class="Banner__with-something-new">
-        <div class="Banner__text-wrap">
-            <span class="title__main-in-Banner">Ecco stuff for everyone!</span>
-            <span class="subtitle__in-Banner">
-                The new ecco products. Just fuck it!<br>
-                And if you wanna fuck this fucking.<br>
-                Just do something with your hole suit... <br>
-            </span>
-            <a href="#" class="Button__learn-more">Learn more <i class="fa-solid fa-angles-right"></i></a>
+    <!-- Alert don't buy it) -->
+    <aside class="alert_dont_buy_it">
+        <span>Please don't try buy something it just a test website *_*</span>
+        <button id="close_btn_alert"><i class="fa-solid fa-xmark"></i></button>
+    </aside>
+    <!-- ----------------------------- MAIN ----------------------------- -->
+    <main>
+        <!-- Banner after header -->
+        <div class="Banner__with-something-new">
+            <div class="Banner__text-wrap">
+                <span class="title__main-in-Banner">Ecco stuff for everyone!</span>
+                <span class="subtitle__in-Banner">
+                    The new ecco products. Just fuck it!<br>
+                    And if you wanna fuck this fucking.<br>
+                    Just do something with your hole suit... <br>
+                </span>
+                <a href="#" class="Button__learn-more">Learn more <i class="fa-solid fa-angles-right"></i></a>
+            </div>
         </div>
-    </div>
+        <!-- title previous slider -->
+        <div class="title_pre__cards">
+            <span>NEW</span>
+        </div>
 
+        <!-- slider carousel main -->
+        <div class="cards__main">
+            <!-- btn slider prev -->
+                <button id="btn_slider_back" class="prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                <!-- slider -->
+                <div class="wrapper__cards__slider responsive">
+                        <!-- product block -->
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/Chocolate.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Chocolate organic</a></span> 
+                        <a class="card_price_product">From $1.99</a>
+                    </div>
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/hemp-oil.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Hemp oil organic</a></span>
+                        <span class="card_price_product">From $10</span>
+                    </div>
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/hemp_conditioner.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Hemp conditioner organic</a></span>
+                        <span class="card_price_product">From $32</span>
+                    </div>
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/hemp_conditioner.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Hemp conditioner organic</a></span>
+                        <span class="card_price_product">From $32</span>
+                    </div>
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/hemp_conditioner.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Hemp conditioner organic</a></span>
+                        <span class="card_price_product">From $32</span>
+                    </div>
+                     <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/Chocolate.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Chocolate organic</a></span> 
+                        <span class="card_price_product">From $1.99</span>
+                    </div>
+                </div>
+                <button id="btn_slider_back" class="next"><i class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
 
+        <!-- ------------------second slider--------------------- -->
+        <!-- title previous slider -->
+        <div class="title_pre__cards">
+            <span>Popular</span>
+        </div>
 
+        <!-- slider carousel main -->
+        <div class="cards__main">
+                <button id="btn_slider_back" class="prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                <div class="wrapper__cards__slider">
+                    <div class="wrap_for_slider">
+                        <div class="card">
+                            <div class="wrapper_for_img">
+                                <img src="/img/products_img/juice.jpg" alt="productimg">
+                            </div>
+                            <span class="card_name_product"><a href="#">Juice organic</a></span>
+                            <span class="card_price_product">From $0.99</span>
+                        </div>
+                        <div class="card">
+                            <div class="wrapper_for_img">
+                                <img src="/img/products_img/candy.jpg" alt="productimg">
+                            </div>
+                            <span class="card_name_product"><a href="#">Candy without sugar</a></span>
+                            <span class="card_price_product">From $0.49</span>
+                        </div>
+                        <div class="card">
+                            <div class="wrapper_for_img">
+                                <img src="/img/products_img/apple_chips.jpg" alt="productimg">
+                            </div>
+                            <span class="card_name_product"><a href="#">Apple chips organic</a></span>
+                            <span class="card_price_product">From $2.15</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn_slider_back"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                
+        </div>
+        <!-- ------------------third slider--------------------- -->
+        <!-- title previous slider -->
+        <div class="title_pre__cards">
+            <span>Sport</span>
+        </div>
 
-        <footer>
-            
-        </footer>
+        <!-- slider carousel main -->
+        <div class="cards__main">
+            <button id="btn_slider_back" class="prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
+            <div class="wrapper__cards__slider">
+                <div class="wrap_for_slider">
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/protein.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Whey protein organic</a></span>
+                        <span class="card_price_product">From $5.99</span>
+                    </div>
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/creatine.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Creatine organic</a></span>
+                        <span class="card_price_product">From $2.40</span>
+                    </div>
+                    <div class="card">
+                        <div class="wrapper_for_img">
+                            <img src="/img/products_img/Spirulina.jpg" alt="productimg">
+                        </div>
+                        <span class="card_name_product"><a href="#">Spirulina sea organic</a></span>
+                        <span class="card_price_product">From $7.15</span>
+                    </div>
+                </div>
+            </div>
+            <button id="btn_slider_back"><i class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
+    </main>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- js -->
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- slick js -->
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript">
+        // SLIDER Home cards
+        $('.responsive').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 </html>
