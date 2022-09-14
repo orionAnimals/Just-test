@@ -50,7 +50,6 @@ function close__search_fun() {
 	block_open_search.classList.remove("active");
 	document.querySelector('.header__wrapper_content').style.display = 'flex';
 }
-// close btn aside alert
-document.querySelector('#close_btn_alert').onclick = function(){
-	document.querySelector('.alert_dont_buy_it').style.display = 'none';
-};
+
+
+
